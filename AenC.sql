@@ -428,6 +428,8 @@ CREATE INDEX EmployeeSales_order ON sales_order (sales_rep);
 CREATE INDEX fin_code_id ON sales_order (fin_code_id);
 CREATE INDEX Fin_codeSales_order ON sales_order (fin_code_id);
 /*!40101 SET character_set_client = @saved_cs_client */;
+--- CustomerSales_order & EmployeeSales_order & Fin_codeSales_order = Niks, verwijst nergens naar en bestaat niet. --
+
 
 --
 -- Dumping data for table `sales_order`
