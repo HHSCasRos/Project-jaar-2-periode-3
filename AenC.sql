@@ -1113,6 +1113,7 @@ CREATE INDEX ProductSales_order_item ON sales_order_item (prod_id);
 CREATE INDEX Sales_order_itemid ON sales_order_item (id);
 CREATE INDEX Sales_orderSales_order_item ON sales_order_item (id);
 /*!40101 SET character_set_client = @saved_cs_client */;
+-- ProductSales_order_item & Sales_order_itemid & Sales_orderSales_order_item Bestaan niet --
 
 --
 -- Dumping data for table `sales_order_item`
