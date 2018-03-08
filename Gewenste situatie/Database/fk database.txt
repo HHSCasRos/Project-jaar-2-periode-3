@@ -1,0 +1,106 @@
+ALTER TABLE Bonus (
+ADD FOREIGN KEY (`emp_id`) REFERENCES Employee(`emp_id`);
+)
+
+ALTER TABLE Training (
+ADD FOREIGN KEY (`emp_id`) REFERENCES Employee(`emp_id`);
+)
+
+ALTER TABLE Pref_Appraisal (
+ADD FOREIGN KEY (`emp_id`) REFERENCES Employee(`emp_id`);
+ADD FOREIGN KEY (`manager_id`) REFERENCES Employee(`emp_id`);
+)
+
+ALTER TABLE Employee (
+ADD FOREIGN KEY (`manager_id`) REFERENCES Employee(`emp_id`);
+ADD FOREIGN KEY (`branch_code`) REFERENCES Branch(`branch_code`);
+ADD FOREIGN KEY (`pos_numb`) REFERENCES Position(`pos_numb`);
+)
+
+ALTER TABLE Department (
+ADD FOREIGN KEY (`Dept_Head_id`) REFERENCES Employee(`emp_id`);
+)
+
+ALTER TABLE Branch (
+ADD FOREIGN KEY (`country_code`) REFERENCES Country(`country_code`);
+ADD FOREIGN KEY (`dept_id`) REFERENCES Department(`dept_id`);
+)
+
+ALTER TABLE Product_Forecast (
+ADD FOREIGN KEY (`product_number`) REFERENCES Product(`product_number`);
+)
+
+ALTER TABLE Inventory (
+ADD FOREIGN KEY (`product_number`) REFERENCES Product(`product_number`);
+)
+
+ALTER TABLE Storage (
+ADD FOREIGN KEY (`country_code`) REFERENCES Country(`country_code`);
+)
+
+ALTER TABLE Campaign (
+ADD FOREIGN KEY (`product_number`) REFERENCES Product(`product_number`);
+)
+
+ALTER TABLE Product (
+ADD FOREIGN KEY (`product_type_id`) REFERENCES Product_type(`product_type_id`);
+)
+
+ALTER TABLE Sales_Target (
+ADD FOREIGN KEY (`emp_id`) REFERENCES Employee(`emp_id`);
+ADD FOREIGN KEY (`product_number`) REFERENCES Product(`product_number`);
+ADD FOREIGN KEY (`retailer_code`) REFERENCES Retailer(`retailer_code`);
+)
+
+ALTER TABLE Product_type (
+ADD FOREIGN KEY (`product_line_code`) REFERENCES Product_Line(`product_line_code`);
+)
+
+ALTER TABLE Order (
+ADD FOREIGN KEY (`emp_id`) REFERENCES Employee(`emp_id`);
+ADD FOREIGN KEY (`order_method_code`) REFERENCES Order_Method(`order_method_code`);
+ADD FOREIGN KEY (`retailer_site_code`) REFERENCES Retailer_Site(`retailer_site_code`);
+ADD FOREIGN KEY (`finance_code`) REFERENCES Order_Finance(`finance_code`);
+)
+
+ALTER TABLE Order_item (
+ADD FOREIGN KEY (`order_id`) REFERENCES Order(`order_id`);
+ADD FOREIGN KEY (`product_id`) REFERENCES Product(`product_id`);
+)
+
+ALTER TABLE Returned_Item (
+ADD FOREIGN KEY (`return_reason`) REFERENCES Return_reason(`return_reason_code`);
+ADD FOREIGN KEY (`order_detail_code`) REFERENCES Order_item(`order_id`);
+)
+
+ALTER TABLE Retailer (
+ADD FOREIGN KEY (`retailer_codeMR`) REFERENCES Retailer(`retailer_code`);
+ADD FOREIGN KEY (`retailer_type_code`) REFERENCES Retailer_Type(`retailer_type_code`);
+)
+
+ALTER TABLE Retailer_Site (
+ADD FOREIGN KEY (`country_code`) REFERENCES Country(`country_code`);
+ADD FOREIGN KEY (`retailer_code`) REFERENCES Retailer(`retailer_code`);
+)
+
+ALTER TABLE Booking(
+ADD FOREIGN KEY (`vac_id`) REFERENCES Vacation(`vac_id`);
+)
+
+ALTER TABLE Traveler(
+ADD FOREIGN KEY (`customer_id`) REFERENCES Customer(`customer_id`);
+ADD FOREIGN KEY (`booking_id`) REFERENCES Booking(`booking_id`);
+)
+
+ALTER TABLE Accommodation (
+ADD FOREIGN KEY (`country_code`) REFERENCES Country(`country_code`);
+)
+
+ALTER TABLE Acc_vac(
+ADD FOREIGN KEY (`acc_id`) REFERENCES Accommodation(`acc_id`);
+ADD FOREIGN KEY (`vac_id`) REFERENCES Vacation(`vac_id`);
+)
+
+ALTER TABLE Storage (
+ADD FOREIGN KEY (`country_code`) REFERENCES Country(`country_code`);
+)
