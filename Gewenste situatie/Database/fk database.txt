@@ -100,7 +100,3 @@ ALTER TABLE Acc_vac(
 ADD FOREIGN KEY (`acc_id`) REFERENCES Accommodation(`acc_id`);
 ADD FOREIGN KEY (`vac_id`) REFERENCES Vacation(`vac_id`);
 )
-
-ALTER TABLE Storage (
-ADD FOREIGN KEY (`country_code`) REFERENCES Country(`country_code`);
-)
