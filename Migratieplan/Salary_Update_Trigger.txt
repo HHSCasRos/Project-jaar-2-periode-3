@@ -23,7 +23,7 @@ GO
 -- =============================================
 CREATE TRIGGER OutdoorParadise.SalaryCheck 
    ON  OutdoorParadise.Employee 
-   AFTER INSERT
+   AFTER UPDATE
 AS 
 		DECLARE @emp FLOAT
 		DECLARE @man FLOAT
