@@ -23,14 +23,14 @@ GO
 -- =============================================
 CREATE TRIGGER OutdoorParadise.SalaryCheck 
    ON  OutdoorParadise.Employee 
-   AFTER UPDATE
+   AFTER INSERT,UPDATE
 AS 
 		DECLARE @emp FLOAT
 		DECLARE @man FLOAT
 		
 		select @emp = inserted.salary FROM inserted;
 		select @man = salary FROM employee
-		WHERE inserted.manager_id = emp_id;
+		WHERE emp_id = (select manager_id from inserted);
 		
 		IF @man <= @emp 
 BEGIN
