@@ -1,0 +1,46 @@
+-- ================================================
+-- Template generated from Template Explorer using:
+-- Create Trigger (New Menu).SQL
+--
+-- Use the Specify Values for Template Parameters 
+-- command (Ctrl-Shift-M) to fill in the parameter 
+-- values below.
+--
+-- See additional Create Trigger templates for more
+-- examples of different Trigger statements.
+--
+-- This block of comments will not be included in
+-- the definition of the function.
+-- ================================================
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE TRIGGER OutdoorParadise.SalaryCheck 
+   ON  OutdoorParadise.Employee 
+   AFTER INSERT
+AS 
+		DECLARE @emp INT  
+		DECLARE @man INT  
+		
+		select @emp = inserted.salary FROM inserted;
+		select @man = salary FROM employee
+		WHERE inserted.manager_id = emp_id;
+		
+		IF @man <= @emp 
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	
+    -- Insert statements for trigger here
+	RAISERROR('De employee mag niet meer verdienen dan zijn manager.');
+	ROLLBACK TRANSACTION;
+	RETURN
+END
+GO
