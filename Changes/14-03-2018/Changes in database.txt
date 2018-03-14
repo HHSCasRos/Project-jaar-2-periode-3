@@ -1,0 +1,13 @@
+branch_code in employee -> nullable
+country_code en active_indicator in retailer_site -> NOT NULL
+country_code in country -> auto_inc
+
+product_id in order_item hernoemen tot product_number
+
+
+returned_item foreign key naar order_item veranderd naar 
+ FOREIGN KEY (order_detail_code, product_number) REFERENCES Order_item(order_id, product_id)
+ 
+
+
+vac_id in Excursion verwijderd
