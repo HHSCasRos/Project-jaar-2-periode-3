@@ -17,8 +17,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 -- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
+-- Author:		Cas Ros
+-- Create date: 2018-03-13
 -- Description:	<Description,,>
 -- =============================================
 CREATE TRIGGER OutdoorParadise.SalaryCheck 
