@@ -1,50 +1,32 @@
--- ================================================
--- Template generated from Template Explorer using:
--- Create Trigger (New Menu).SQL
---
--- Use the Specify Values for Template Parameters 
--- command (Ctrl-Shift-M) to fill in the parameter 
--- values below.
---
--- See additional Create Trigger templates for more
--- examples of different Trigger statements.
---
--- This block of comments will not be included in
--- the definition of the function.
--- ================================================
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
--- =============================================
--- Author:		<Author,,Name>
--- Create date: <Create Date,,>
--- Description:	<Description,,>
--- =============================================
 CREATE TRIGGER dbo.MinimumLoon
-   ON  dbo.COUNTRY
+   ON dbo.Employee
    AFTER INSERT, UPDATE
 AS 
-
-	DECLARE @Salary FLOAT
-	DECLARE @Minimun FLOAT
-
-	select @Salary = select dbo.Employee.Salary
-	from dbo.Employee
-
-	select @Minimun = select dbo.Country.Minimum_Wage
-	from dbo.Country JOIN dbo.Branch ON dbo.Country.Country_code = dbo.Branch.Country_code
-	WHERE dbo.Branch.branch_code = dbo.Employee.branch_code
-
-
-	if @Minimun > @Salary
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
 
     -- Insert statements for trigger here
-	UPDATE dbo.Employee
-	SET @Salary = @Minimun
+
+	DECLARE @salary FLOAT
+	DECLARE @branch_code INT
+	SELECT @salary=salary, @branch_code=Branch_Code FROM inserted
+
+	IF @branch_code IS NOT NULL AND @salary IS NOT NULL
+	BEGIN
+		DECLARE @minimum FLOAT
+
+		SELECT @minimum = Country.Minimum_Wage
+		FROM Country JOIN Branch ON Country.Country_code = Branch.Country_code
+		WHERE Branch.branch_code = @branch_code
+
+		IF @salary < @minimum
+		BEGIN
+			RAISERROR('The wage of the employee is less than the minimum wage of the country the employee is working in.', 16, 1);
+			ROLLBACK;
+			RETURN
+		END
+
+	END
 END
-GO
