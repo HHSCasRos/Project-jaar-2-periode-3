@@ -1,0 +1,6 @@
+Om het overzicht te houden lijkt het me handig om alle "changes",
+							tabel create statements,
+							etc
+
+
+in 1 map te plaatsen.
