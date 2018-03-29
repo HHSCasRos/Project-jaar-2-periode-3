@@ -38,14 +38,24 @@ namespace Database_Demonstratie_Applicatie
             try
             {
                 int vac_id = Convert.ToInt32(comboBox1.SelectedItem.ToString().Split(' ')[1]);
+                /*
+                 * 
 
                 String startdate = monthCalendar1.SelectionStart.ToLongDateString();
                 DateTime date = DateTime.Parse(startdate, System.Globalization.CultureInfo.InvariantCulture);
 
                 string datestring = date.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
-                MessageBox.Show(datestring);
+                //MessageBox.Show(datestring);
+                */
+                int year = monthCalendar1.SelectionStart.Year;
+                int month = monthCalendar1.SelectionStart.Month;
+                int day = monthCalendar1.SelectionStart.Day;
 
-                SqlCommand Hoi = new SqlCommand("INSERT INTO Booking (Vac_Id, Transport_To, Transport_From, Start_Date) VALUES ('" + vac_id + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + datestring + "')", Database);
+                MessageBox.Show(year + " " + month + " " + day);
+
+                String date = year + "-" + month + "-" + day;
+
+                SqlCommand Hoi = new SqlCommand("INSERT INTO Booking (Vac_Id, Transport_To, Transport_From, Start_Date) VALUES ('" + vac_id + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + date + "')", Database);
                 Hoi.ExecuteNonQuery();
                 MessageBox.Show("Booking Created");
             }
