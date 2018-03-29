@@ -18,7 +18,7 @@ namespace Database_Demonstratie_Applicatie
         public Form1()
         {
             InitializeComponent();
-            Database = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=OutdoorParadise;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            Database = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=OutdoorParadise2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             try
             {
                 Database.Open();
