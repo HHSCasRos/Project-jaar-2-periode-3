@@ -1,0 +1,12 @@
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\bin\Debug\Database Demonstratie Applicatie.exe.config
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\bin\Debug\Database Demonstratie Applicatie.exe
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\bin\Debug\Database Demonstratie Applicatie.pdb
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database Demonstratie Applicatie.csprojResolveAssemblyReference.cache
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database_Demonstratie_Applicatie.Form1.resources
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database_Demonstratie_Applicatie.Properties.Resources.resources
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database Demonstratie Applicatie.csproj.GenerateResource.Cache
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database Demonstratie Applicatie.csproj.CoreCompileInputs.cache
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database Demonstratie Applicatie.exe
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database Demonstratie Applicatie.pdb
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database_Demonstratie_Applicatie.booking.resources
+E:\GitHub\Project-jaar-2-periode-3\Applicatie\Database Demonstratie Applicatie\Database Demonstratie Applicatie\obj\Debug\Database_Demonstratie_Applicatie.employees.resources
