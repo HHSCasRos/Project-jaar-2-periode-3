@@ -1,0 +1,11 @@
+#timer
+import time
+start = time.time()
+
+#Do your stuff here
+#Do your stuff here
+#Do your stuff here
+
+#timer
+end = time.time()
+print("Elapsed seconds: {0}".format(end - start))
