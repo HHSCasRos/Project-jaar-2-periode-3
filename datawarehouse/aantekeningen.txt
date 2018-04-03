@@ -1,0 +1,1 @@
+klasse diagram aanpassen (order_item) price_each
