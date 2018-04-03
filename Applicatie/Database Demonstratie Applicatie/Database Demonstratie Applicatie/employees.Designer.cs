@@ -55,7 +55,10 @@
             this.Manager_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Branch_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pos_Numb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -92,7 +95,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(961, 409);
+            this.dataGridView1.Size = new System.Drawing.Size(1026, 562);
             this.dataGridView1.TabIndex = 0;
             // 
             // Emp_id
@@ -225,16 +228,37 @@
             this.Pos_Numb.HeaderText = "Position Number";
             this.Pos_Numb.Name = "Pos_Numb";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 519);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1026, 43);
+            this.panel1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(939, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // employees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 409);
+            this.ClientSize = new System.Drawing.Size(1026, 562);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "employees";
             this.Text = "employees";
             this.Load += new System.EventHandler(this.employees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -268,5 +292,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Branch_Code;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pos_Numb;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }
