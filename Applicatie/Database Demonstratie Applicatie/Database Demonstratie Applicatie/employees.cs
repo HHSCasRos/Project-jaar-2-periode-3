@@ -38,12 +38,12 @@ namespace Database_Demonstratie_Applicatie
             myReader.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                MessageBox.Show(row.Cells["Emp_id"].Value.ToString());
-            }
-        }
-    }
+		private void employees_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			e.Cancel = true;
+			this.Hide();
+			Form1 form1 = new Form1();
+			form1.Show();
+		}
+	}
 }

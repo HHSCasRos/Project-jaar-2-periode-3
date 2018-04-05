@@ -51,7 +51,7 @@ namespace Database_Demonstratie_Applicatie
                 int month = monthCalendar1.SelectionStart.Month;
                 int day = monthCalendar1.SelectionStart.Day;
 
-                MessageBox.Show(year + " " + month + " " + day);
+                //MessageBox.Show(year + " " + month + " " + day);
 
                 String date = year + "-" + month + "-" + day;
 
@@ -65,5 +65,13 @@ namespace Database_Demonstratie_Applicatie
             }
 
         }
-    }
+
+		private void booking_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			e.Cancel = true;
+			this.Hide();
+			Form1 form1 = new Form1();
+			form1.Show();
+		}
+	}
 }

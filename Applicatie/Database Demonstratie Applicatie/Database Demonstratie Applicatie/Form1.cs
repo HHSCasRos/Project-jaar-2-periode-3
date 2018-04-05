@@ -18,7 +18,7 @@ namespace Database_Demonstratie_Applicatie
         public Form1()
         {
             InitializeComponent();
-            Database = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=OutdoorParadise;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            Database = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=OutdoorParadise;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             try
             {
                 Database.Open();
@@ -50,5 +50,10 @@ namespace Database_Demonstratie_Applicatie
         {
 
         }
-    }
+
+		private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			System.Environment.Exit(1);
+		}
+	}
 }
