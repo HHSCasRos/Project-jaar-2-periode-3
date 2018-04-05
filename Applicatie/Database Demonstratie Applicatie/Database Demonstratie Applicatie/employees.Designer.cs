@@ -28,43 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Emp_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Emp_FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Emp_LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Street = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Zip_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ss_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Start_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Termination_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Birth_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bene_Health_Ins = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bene_Life_Ins = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bene_Day_Care = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone_Work = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Extension = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fax = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Manager_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Branch_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Pos_Numb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.Emp_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Emp_FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Emp_LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Street = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Zip_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ss_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Start_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Termination_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Birth_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Bene_Health_Ins = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Bene_Life_Ins = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Bene_Day_Care = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Phone_Work = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Extension = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Fax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Cv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Manager_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Branch_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Pos_Numb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// dataGridView1
+			// 
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Emp_id,
             this.Emp_FirstName,
             this.Emp_LastName,
@@ -91,175 +88,157 @@
             this.Manager_Id,
             this.Branch_Code,
             this.Pos_Numb});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1026, 562);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Emp_id
-            // 
-            this.Emp_id.HeaderText = "Emp ID";
-            this.Emp_id.Name = "Emp_id";
-            // 
-            // Emp_FirstName
-            // 
-            this.Emp_FirstName.HeaderText = "First Name";
-            this.Emp_FirstName.Name = "Emp_FirstName";
-            // 
-            // Emp_LastName
-            // 
-            this.Emp_LastName.HeaderText = "Last Name";
-            this.Emp_LastName.Name = "Emp_LastName";
-            // 
-            // Street
-            // 
-            this.Street.HeaderText = "Street";
-            this.Street.Name = "Street";
-            // 
-            // City
-            // 
-            this.City.HeaderText = "City";
-            this.City.Name = "City";
-            // 
-            // State
-            // 
-            this.State.HeaderText = "State";
-            this.State.Name = "State";
-            // 
-            // Zip_Code
-            // 
-            this.Zip_Code.HeaderText = "Zip Code";
-            this.Zip_Code.Name = "Zip_Code";
-            // 
-            // Phone
-            // 
-            this.Phone.HeaderText = "Phone Number";
-            this.Phone.Name = "Phone";
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            // 
-            // ss_number
-            // 
-            this.ss_number.HeaderText = "SS Number";
-            this.ss_number.Name = "ss_number";
-            // 
-            // Start_Date
-            // 
-            this.Start_Date.HeaderText = "Start Date";
-            this.Start_Date.Name = "Start_Date";
-            // 
-            // Termination_Date
-            // 
-            this.Termination_Date.HeaderText = "Termination Date";
-            this.Termination_Date.Name = "Termination_Date";
-            // 
-            // Birth_Date
-            // 
-            this.Birth_Date.HeaderText = "Birth Date";
-            this.Birth_Date.Name = "Birth_Date";
-            // 
-            // Bene_Health_Ins
-            // 
-            this.Bene_Health_Ins.HeaderText = "Bene Health Ins";
-            this.Bene_Health_Ins.Name = "Bene_Health_Ins";
-            // 
-            // Bene_Life_Ins
-            // 
-            this.Bene_Life_Ins.HeaderText = "Bene Lift ins";
-            this.Bene_Life_Ins.Name = "Bene_Life_Ins";
-            // 
-            // Bene_Day_Care
-            // 
-            this.Bene_Day_Care.HeaderText = "Bene Day Care";
-            this.Bene_Day_Care.Name = "Bene_Day_Care";
-            // 
-            // Sex
-            // 
-            this.Sex.HeaderText = "Sex";
-            this.Sex.Name = "Sex";
-            // 
-            // Salary
-            // 
-            this.Salary.HeaderText = "Salary";
-            this.Salary.Name = "Salary";
-            // 
-            // Phone_Work
-            // 
-            this.Phone_Work.HeaderText = "Phone Work";
-            this.Phone_Work.Name = "Phone_Work";
-            // 
-            // Extension
-            // 
-            this.Extension.HeaderText = "Extension";
-            this.Extension.Name = "Extension";
-            // 
-            // Fax
-            // 
-            this.Fax.HeaderText = "Fax";
-            this.Fax.Name = "Fax";
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            // 
-            // Cv
-            // 
-            this.Cv.HeaderText = "Cv";
-            this.Cv.Name = "Cv";
-            // 
-            // Manager_Id
-            // 
-            this.Manager_Id.HeaderText = "Manager Id";
-            this.Manager_Id.Name = "Manager_Id";
-            // 
-            // Branch_Code
-            // 
-            this.Branch_Code.HeaderText = "Branch Code";
-            this.Branch_Code.Name = "Branch_Code";
-            // 
-            // Pos_Numb
-            // 
-            this.Pos_Numb.HeaderText = "Position Number";
-            this.Pos_Numb.Name = "Pos_Numb";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 519);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1026, 43);
-            this.panel1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(939, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // employees
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 562);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "employees";
-            this.Text = "employees";
-            this.Load += new System.EventHandler(this.employees_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
+			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+			this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.RowTemplate.Height = 24;
+			this.dataGridView1.Size = new System.Drawing.Size(770, 457);
+			this.dataGridView1.TabIndex = 0;
+			// 
+			// Emp_id
+			// 
+			this.Emp_id.HeaderText = "Emp ID";
+			this.Emp_id.Name = "Emp_id";
+			// 
+			// Emp_FirstName
+			// 
+			this.Emp_FirstName.HeaderText = "First Name";
+			this.Emp_FirstName.Name = "Emp_FirstName";
+			// 
+			// Emp_LastName
+			// 
+			this.Emp_LastName.HeaderText = "Last Name";
+			this.Emp_LastName.Name = "Emp_LastName";
+			// 
+			// Street
+			// 
+			this.Street.HeaderText = "Street";
+			this.Street.Name = "Street";
+			// 
+			// City
+			// 
+			this.City.HeaderText = "City";
+			this.City.Name = "City";
+			// 
+			// State
+			// 
+			this.State.HeaderText = "State";
+			this.State.Name = "State";
+			// 
+			// Zip_Code
+			// 
+			this.Zip_Code.HeaderText = "Zip Code";
+			this.Zip_Code.Name = "Zip_Code";
+			// 
+			// Phone
+			// 
+			this.Phone.HeaderText = "Phone Number";
+			this.Phone.Name = "Phone";
+			// 
+			// Status
+			// 
+			this.Status.HeaderText = "Status";
+			this.Status.Name = "Status";
+			// 
+			// ss_number
+			// 
+			this.ss_number.HeaderText = "SS Number";
+			this.ss_number.Name = "ss_number";
+			// 
+			// Start_Date
+			// 
+			this.Start_Date.HeaderText = "Start Date";
+			this.Start_Date.Name = "Start_Date";
+			// 
+			// Termination_Date
+			// 
+			this.Termination_Date.HeaderText = "Termination Date";
+			this.Termination_Date.Name = "Termination_Date";
+			// 
+			// Birth_Date
+			// 
+			this.Birth_Date.HeaderText = "Birth Date";
+			this.Birth_Date.Name = "Birth_Date";
+			// 
+			// Bene_Health_Ins
+			// 
+			this.Bene_Health_Ins.HeaderText = "Bene Health Ins";
+			this.Bene_Health_Ins.Name = "Bene_Health_Ins";
+			// 
+			// Bene_Life_Ins
+			// 
+			this.Bene_Life_Ins.HeaderText = "Bene Lift ins";
+			this.Bene_Life_Ins.Name = "Bene_Life_Ins";
+			// 
+			// Bene_Day_Care
+			// 
+			this.Bene_Day_Care.HeaderText = "Bene Day Care";
+			this.Bene_Day_Care.Name = "Bene_Day_Care";
+			// 
+			// Sex
+			// 
+			this.Sex.HeaderText = "Sex";
+			this.Sex.Name = "Sex";
+			// 
+			// Salary
+			// 
+			this.Salary.HeaderText = "Salary";
+			this.Salary.Name = "Salary";
+			// 
+			// Phone_Work
+			// 
+			this.Phone_Work.HeaderText = "Phone Work";
+			this.Phone_Work.Name = "Phone_Work";
+			// 
+			// Extension
+			// 
+			this.Extension.HeaderText = "Extension";
+			this.Extension.Name = "Extension";
+			// 
+			// Fax
+			// 
+			this.Fax.HeaderText = "Fax";
+			this.Fax.Name = "Fax";
+			// 
+			// Email
+			// 
+			this.Email.HeaderText = "Email";
+			this.Email.Name = "Email";
+			// 
+			// Cv
+			// 
+			this.Cv.HeaderText = "Cv";
+			this.Cv.Name = "Cv";
+			// 
+			// Manager_Id
+			// 
+			this.Manager_Id.HeaderText = "Manager Id";
+			this.Manager_Id.Name = "Manager_Id";
+			// 
+			// Branch_Code
+			// 
+			this.Branch_Code.HeaderText = "Branch Code";
+			this.Branch_Code.Name = "Branch_Code";
+			// 
+			// Pos_Numb
+			// 
+			this.Pos_Numb.HeaderText = "Position Number";
+			this.Pos_Numb.Name = "Pos_Numb";
+			// 
+			// employees
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(770, 457);
+			this.Controls.Add(this.dataGridView1);
+			this.Margin = new System.Windows.Forms.Padding(2);
+			this.Name = "employees";
+			this.Text = "employees";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.employees_FormClosing);
+			this.Load += new System.EventHandler(this.employees_Load);
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+			this.ResumeLayout(false);
 
         }
 
@@ -292,7 +271,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Manager_Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Branch_Code;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pos_Numb;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
     }
 }
